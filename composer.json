@@ -1,0 +1,15 @@
+{
+  "name": "fanlisdk/fanlisdk",
+  "description": "The Fanli Sdk.",
+  "keywords": ["fanli", "sdk"],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=5.5.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "fanlisdk\\": "src/fanli.php"
+    }
+  }
+}
