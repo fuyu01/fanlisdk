@@ -5,7 +5,7 @@
  * Date: 2016/12/2
  * Time: 17:58
  */
-namespace src\utils;
+namespace fanlisdk\src\utils;
 
 class Utils {
     public function getSign() {

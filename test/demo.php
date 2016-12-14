@@ -56,6 +56,6 @@ $result = $fanli->push(['content'=>'<?xml version="1.0" encoding="utf-8"?>
 ']);
 
 var_dump($result);
-$util = new src\utils\Utils();
+$util = new fanlisdk\src\utils\Utils();
 var_dump($util->xmldecode($result));
 
