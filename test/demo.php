@@ -6,7 +6,7 @@
  * Time: 9:25
  */
 include("../src/utils/util.php");
-include("../src/fanli.php");//composer安装不需要手动导入文件，会自动导入
+include("../src/fanli.php");
 use src\fanli;
 $config = ['shopid' => 1234, 'shopkey' => '51fanli'];
 $fanli = new fanli($config);
