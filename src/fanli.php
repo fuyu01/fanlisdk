@@ -5,7 +5,7 @@
  * Date: 2016/12/2
  * Time: 9:22
  */
-namespace src;
+namespace fanlisdk\src;
 
 require_once 'utils/util.php';
 use src\utils\utils as util;

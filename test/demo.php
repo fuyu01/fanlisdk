@@ -7,7 +7,7 @@
  */
 include("../src/utils/util.php");
 include("../src/fanli.php");
-use src\fanli;
+use fanlisdk\src\fanli;
 $config = ['shopid' => 1234, 'shopkey' => '51fanli'];
 $fanli = new fanli($config);
 $result = $fanli->push(['content'=>'<?xml version="1.0" encoding="utf-8"?>
