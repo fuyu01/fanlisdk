@@ -7,8 +7,8 @@
  */
 namespace fanlisdk\src;
 
-require_once 'utils/util.php';
-use fanlisdk\src\utils\utils as util;
+//require_once 'utils/util.php';
+//use fanlisdk\src\utils\utils as util;
 
 class fanli {
     private $host = 'http://union.fanli.com/';
@@ -24,7 +24,7 @@ class fanli {
             throw new \Exception('config缺少参数');
         }
         $this->config = $config;
-        $this->util = new util();
+        $this->util = new utils\utils();
     }
 
     public function push(array $postdata) {

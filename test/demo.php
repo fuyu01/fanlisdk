@@ -5,11 +5,13 @@
  * Date: 2016/12/2
  * Time: 9:25
  */
-include("../src/utils/util.php");
-include("../src/fanli.php");
-use fanlisdk\src\fanli;
+//include("../src/utils/utils.php");
+//include("../src/fanli.php");
+//use fanlisdk\src\fanli;
+include("../vendor/autoload.php");//若不用auloader加载则需引入文件
+
 $config = ['shopid' => 1234, 'shopkey' => '51fanli'];
-$fanli = new fanli($config);
+$fanli = new fanlisdk\src\fanli($config);
 $result = $fanli->push(['content'=>'<?xml version="1.0" encoding="utf-8"?>
 <orders version="4.0" type="offline">
 <order>
@@ -56,6 +58,4 @@ $result = $fanli->push(['content'=>'<?xml version="1.0" encoding="utf-8"?>
 ']);
 
 var_dump($result);
-$util = new fanlisdk\src\utils\Utils();
-var_dump($util->xmldecode($result));
 
