@@ -8,6 +8,7 @@
 namespace fanlisdk\src\utils;
 
 class utils {
+    //xml数字索引对应名称，不配置会导致节点名缺失
     private $xmlNode = [
         'orders' => 'order',
         'products' => 'product',
