@@ -8,16 +8,13 @@
 namespace fanlisdk\src\utils;
 
 class Utils {
+    //push接口暂时没有签名
     public function getSign() {
 
     }
 
     public function xmldecode($xml) {
         return json_decode(json_encode(simplexml_load_string($xml)), true);
-    }
-
-    public function xmlgenerate(array $data) {
-
     }
 
     public function curl(array $postdata, $url) {
