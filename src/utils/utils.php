@@ -17,30 +17,6 @@ class utils {
         return json_decode(json_encode(simplexml_load_string($xml)), true);
     }
 
-    public function xmlgenerate(array $arr, $type = '', $version = '4.0') {
-        //array(array([...],[...])
-
-        $xml = '<?xml version="1.0" encoding="utf-8"?>';
-        $xml .= '<orders version="' . $version . '"' . ($type ? $type : '') . '>';
-        foreach ($arr as $order) {
-            $xml .= '<order>';
-            $keys = array_keys($order);
-            foreach ($keys as $key) {
-                if (is_array($order[$key])) {
-                    $xml .= "<$key>";
-
-                    $xml .= "</$key>";
-                } else {
-                    $xml .= "<$key>" . $order[$key] . "</$key>";
-                }
-            }
-
-            $xml .= '</order>';
-        }
-        $xml .= '<orders>';
-        return $xml;
-    }
-
     public function curl(array $postdata, $url) {
         $ch = curl_init();
         if ($ch === false) {
