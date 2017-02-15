@@ -12,7 +12,7 @@ include("../vendor/autoload.php");//若不用auloader加载则需引入文件
 
 $config = ['shopid' => 1234, 'shopkey' => '51fanli'];
 $fanli = new fanlisdk\src\fanli($config);
-$result = $fanli->push(['content'=>'<?xml version="1.0" encoding="utf-8"?>
+$testxml = '<?xml version="1.0" encoding="utf-8"?>
 <orders version="4.0" type="offline">
 <order>
 <s_id>1234</s_id>
@@ -54,8 +54,8 @@ $result = $fanli->push(['content'=>'<?xml version="1.0" encoding="utf-8"?>
 </product>
 </products>
 </order>
-</orders>
-']);
+</orders>';
+$result = $fanli->push(['content' => $testxml]);
 
 var_dump($result);
 
