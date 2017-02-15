@@ -7,11 +7,12 @@
  */
 namespace fanlisdk\src;
 
+//若无composer则需要require文件
 //require_once 'utils/util.php';
 //use fanlisdk\src\utils\utils as util;
 
 class fanli {
-    private $host = 'http://union.fanli.com/';
+    private $host = 'http://xxxx.xxxx.com/';//测试修改
     private $config;
     private $util;
 
